@@ -57,7 +57,7 @@ public class GreedyFlorist {
 
     }
     
-    static int getMinimumCost(int k, int[] c) {
+    static int getMinimumCost3(int k, int[] c) {
         Arrays.sort(c);
         int sum=0;
         int div=k;
@@ -82,7 +82,14 @@ public class GreedyFlorist {
 
     }
     
+    static int getMinimumCost(int k, int[] c) {
+        Arrays.sort(c);
+        int sum = 0; 
+        for(int x=c.length-1; x>=0;x--) sum+=(((c.length-1 - x)/k) + 1) * c[x];
+        return sum;      
 
+    }
+    
     private static final Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
