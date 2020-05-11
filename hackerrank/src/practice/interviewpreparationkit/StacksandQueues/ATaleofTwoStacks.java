@@ -1,5 +1,5 @@
 //https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem?h_l=interview&playlist_slugs[]=interview-preparation-kit&playlist_slugs[]=stacks-queues
-package hackerrank.algorithms.StacksandQueues;
+package practice.interviewpreparationkit.StacksandQueues;
 
 import java.io.*;
 import java.util.*;
